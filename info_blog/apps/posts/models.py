@@ -16,7 +16,7 @@ class Post(models.Model):
 
     class Meta:
         verbose_name = 'Publicacion'
-        Verbose_name_plural = 'Publicaciones'
+        verbose_name_plural = 'Publicaciones'
 
     def __str__(self):
         return f'{self.titulo}'
