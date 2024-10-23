@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     # Dependencias
     'ckeditor',
     'bootstrap4',
+
+    # apps
+    'apps.posts',
 ]
 
 MIDDLEWARE = [
