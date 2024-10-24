@@ -1,5 +1,5 @@
 from django.db import models
-from django_ckeditor_5.fields import CKEditor5Field
+from ckeditor.fields import RichTextField
 
 class Post(models.Model):
     """
@@ -8,7 +8,7 @@ class Post(models.Model):
 
     titulo = models.CharField('Titulo', max_length=200, blank=False, null=False)
     descripcion = models.CharField('Descripcion', max_length=200, blank=False, null=False)
-    contenido = CKEditor5Field('Contenido')
+    contenido = RichTextField('Contenido')
     portada = models.URLField('Portada', max_length=255)
     activo = models.BooleanField('Publicacion Activa', default=True)
     creado = models.DateTimeField('Fecha de creación', auto_now=False, auto_now_add=True)
