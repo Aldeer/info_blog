@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Dependencias
-    'django_ckeditor_5',
+    'ckeditor',
     'bootstrap4',
 
     # apps
